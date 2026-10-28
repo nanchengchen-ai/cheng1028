@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./streamlit-component-lib.js"></script>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="video-wrap">
+      <video id="camera" autoplay playsinline muted></video>
+      <div id="placeholder">&#x6309;&#x4e0B;&#x65B9;&#x6309;&#x9215;&#x555F;&#x52D5;&#x651D;&#x5F71;&#x6A5F;</div>
+    </div>
+    <canvas id="frame" hidden></canvas>
+    <div class="controls">
+      <button id="toggle" type="button">開啟攝影機</button>
+      <span id="status" role="status">攝影機尚未啟動</span>
+    </div>
+  </body>
+</html>

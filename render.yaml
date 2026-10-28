@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: gesture-photo-viewer
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.14.8"
+    plan: free
+    startCommand: streamlit run main.py --server.address 0.0.0.0 --server.port $PORT --server.headless true

@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.uv-cache/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Ignore personal uploads while retaining the built-in sample photos below.
+assets/images/*
+!assets/images/.gitkeep
+!assets/images/01-dolomites-lake.png
+!assets/images/02-cherry-blossom-garden.png
+!assets/images/03-coastal-lighthouse.png
+!assets/images/04-waterfall-valley.png
